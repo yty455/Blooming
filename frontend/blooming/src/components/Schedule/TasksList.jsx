@@ -20,12 +20,12 @@ function TasksList({isPosting, onStopPosting}) {
     )}
     {tasks.length > 0 && (
       <ul className={ classes.posts } >
-        {tasks.map((task) => <Task key={task.body} author={task.author} body={task.body} />)}
+        {tasks.map((task) => <Task key={task.body} date={task.date} body={task.body} />)}
       </ul>
     )}
-    {tasks.length === 0 && <div style={{textAlign:'center'}}>
+    {tasks.length === 0 && (
       <p>오늘은 일정이 없슴다</p>
-    </div> }
+    )}
     </>
   )
 }
