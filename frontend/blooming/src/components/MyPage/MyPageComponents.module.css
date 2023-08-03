@@ -1,0 +1,50 @@
+/* Profile */
+.profile {
+  display: block;
+  height: 30vh;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  padding-bottom: 1vh;
+  
+  /* height: 50%; */
+}
+
+.profileImg {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; 
+  /* overflow: hidden; */
+  object-fit: cover;
+}
+
+
+.weddingContainer {
+  display: flex;
+  justify-content: center;
+
+  /* height: 40%; */
+  margin-bottom: 1vh;
+}
+
+/* IconBox */
+.iconBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 56px;
+  height: 56px;
+  background-color: #fff;
+  margin-bottom: 3px;
+  border-radius: 20%;
+}
