@@ -11,20 +11,21 @@ import { customAxios } from "../../lib/axios";
 
 export default function Join() {
   // fcmToken 받아오기
-  const [fcmToken, setFcmToken] = useState('')
+  const [fcmToken, setFcmToken] = useState("");
 
   const getToken = function () {
     if (window.flutter_inappwebview) {
-      window.flutter_inappwebview.callHandler('handleFoo')
+      window.flutter_inappwebview
+        .callHandler("handleFoo")
         .then(function (result) {
-          setFcmToken(JSON.stringify(result.fcmT).slice(1,-1))
+          setFcmToken(JSON.stringify(result.fcmT).slice(1, -1));
         });
     }
-  }
+  };
 
   useEffect(() => {
-    getToken()
-  }, [])
+    getToken();
+  }, []);
   // 에러 모달
   const [ErrorModal, handleError] = useErrorModal();
   const navigate = useNavigate();
@@ -80,10 +81,10 @@ export default function Join() {
   };
   // 추가 정보 작성 POST 요청 주고, 유저 데이터에 넣기
   const handleSignUp = async () => {
-    await getToken()
+    await getToken();
     try {
       if (fcmToken) {
-        setFormData({ ...formData, fcmToken: fcmToken})
+        setFormData({ ...formData, fcmToken: fcmToken });
       }
       const response = await customAxios.post("sign-up", formData);
       if (
@@ -100,11 +101,11 @@ export default function Join() {
           response.headers["authorization_refresh"],
         );
       }
-      setUserData(formData);
+      setUserData({ ...userData, ...formData });
       console.log(response);
-      // navigate("/DecideWedding", {
-      //   state: { pageTitle: "회원가입" },
-      // });
+      navigate("/DecideWedding", {
+        state: { pageTitle: "회원가입" },
+      });
     } catch (error) {
       console.log("추가 정보 POST 에러:", error);
       navigate("/");
