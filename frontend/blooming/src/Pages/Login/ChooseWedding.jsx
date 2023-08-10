@@ -1,0 +1,80 @@
+import { useNavigate } from "react-router-dom";
+import Button from "../../components/Login/Button";
+import { useRecoilState, useRecoilValue } from "recoil";
+import { userCoupleState, userState } from "../../recoil/ProfileAtom";
+import { weddingDateState } from "../../recoil/WeddingDdayAtom";
+import { useState } from "react";
+import { customAxios } from "../../lib/axios";
+
+export default function ChooseWedding() {
+  const userData = useRecoilValue(userState);
+  const navigate = useNavigate();
+
+  const [userCouple, setUserCouple] = useRecoilState(userCoupleState);
+
+  // 약혼자 확인
+  const isFiance = async () => {
+    try {
+      const response = await customAxios.get("my-fiance");
+      setUserCouple(response.data.result[0]);
+      navigate("/home");
+    } catch (error) {
+      console.log("약혼자 없음", error);
+      navigate("/share", { state: { pageTitle: "회원가입" } });
+    }
+  };
+
+  const [weddingDate, setWeddingDate] = useRecoilState(weddingDateState);
+  const [resWeddingDate, setResWeddingDate] = useState();
+
+  // 웨딩 정보 변경
+  const handleChange = (e) => {
+    const newWeddingDate = e.target.value;
+    setWeddingDate(newWeddingDate);
+    setResWeddingDate({
+      weddingDate,
+    });
+  };
+
+  // 웨딩 정보 POST 요청
+  const saveWeddingDate = async () => {
+    try {
+      await customAxios.post("wedding-date", {
+        weddingDate,
+      });
+    } catch (error) {
+      console.log("웨딩 정보 POST 에러: ", error);
+      // console.log("res", resWeddingDate);
+      // console.log(weddingDate);
+    }
+  };
+
+  // 버튼 클릭 시 웨딩 정보 보내기
+  const submitWeddingDate = () => {
+    saveWeddingDate();
+    isFiance();
+  };
+
+  return (
+    <div className='mainContainer'>
+      <h3>{userData.name}님의 결혼식 날짜는 언제인가요?</h3>
+      {/* 달력 바꿔줘 소정아 */}
+      <input type='date' value={weddingDate} onChange={handleChange} />
+
+      {weddingDate && (
+        <div>
+          <p>{weddingDate}가 맞나요?</p>
+          <Button text='네' onClick={submitWeddingDate} />
+        </div>
+      )}
+      <br />
+      <Button
+        text='날짜 입력 건너뛰기'
+        onClick={() => {
+          setWeddingDate("");
+          isFiance();
+        }}
+      />
+    </div>
+  );
+}

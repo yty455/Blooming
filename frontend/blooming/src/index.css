@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'SUITE-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SUITE-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SUITE-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SUITE-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LeferiPoint-SpecialItalicA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-SpecialItalicA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --vh: 100%;
+  --color-bg: #FFFAF4;
+}
+
+#root {
+  /* height: calc(var(--vh, 1vh) * 100);  */
+}
+
+.mainContainer {
+  margin: 60px 16px; 
+  /* width: 100%; */
+  /* box-sizing: border-box; */
+} 
+
+/* :root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+} */
+
+body {
+  font-family: 'SUITE-Regular', 'SUITE-SemiBold', 'SUITE-Bold', 'SUITE-ExtraBold', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+
+  min-width: 100vw;
+  /* min-height: 100vh; */
+  background-color: #FFFAF4;
+}
+
+a{
+  text-decoration-line: none;
+}
+

@@ -1,0 +1,96 @@
+/* Profile */
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  padding: 1.5rem 0;
+}
+
+.Alone .profileImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* margin-right: 1rem; */
+}
+.Alone .profileName {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.Couple .profileImg {
+  border-radius:50%;
+  object-fit: cover;
+  position: relative;
+}
+.myImg {
+  width: 60px;
+  height: 60px;
+}
+.coupleProfile {
+  width: 48px;
+  height: 48px;
+  border-radius:50%;
+  margin-left: -10px;
+}
+.Couple .profileName {
+  display: flex;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+.Couple .profileName span {
+  padding: 0 10px;
+  text-align: end;
+}
+
+/* AppContainer */
+.wrapper {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.appList {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin: 1rem 0;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+}
+.icon {
+  font-size: 1.6rem;
+  margin-bottom: 0.1rem;
+}
+
+/* SettingList */
+.settingList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.settingItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.2rem;
+  color: #666;
+}
+.settingIcon {
+  margin-right: 0.5rem;
+  margin-top: 0.3rem
+}
