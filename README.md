@@ -20,7 +20,7 @@
 
 - 📽 [UCC](https://youtu.be/o2EBLNdY8w4)
 
-- 🎤 [중간 발표 자료](https://docs.google.com/presentation/d/1ScCrScWdOtp96Koz_G8QV_aSXLtkl8qk/edit?usp=sharing&ouid=116217035030993886773&rtpof=true&sd=true)
+- 🎤 [중간 발표 자료](https://drive.google.com/file/d/1COA8hVxKce2ITqUMMZi81D2oJvRxbZyO/view?usp=sharing)
 
 - 🎤 [최종발표 자료](https://drive.google.com/file/d/1Zd7H1pnseM33wLsKeWNzw6r47Dtfco3s/view?usp=sharing)
 
