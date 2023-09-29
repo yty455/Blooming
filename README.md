@@ -1,6 +1,4 @@
-<img src="README_assets/bb0ec503e32c81cec5154bac8093e364ed6a2785.png" title="" alt="ring.png" data-align="center">
-
-<img title="" src="README_assets/34cf01b03da6bca188cbf69d95b1e9a6547ab20f.png" alt="text.png" width="334" data-align="center">
+<img title="" src="README_assets/df44f536b80d0d6e4948a3a76fefff95dc535d88.PNG" alt="123.PNG" width="349" data-align="center">
 
 # BLOOMING
 
@@ -20,7 +18,7 @@
 
 - 📽 [UCC](https://youtu.be/o2EBLNdY8w4)
 
-- 🎤 [중간 발표 자료](https://docs.google.com/presentation/d/1ScCrScWdOtp96Koz_G8QV_aSXLtkl8qk/edit?usp=sharing&ouid=116217035030993886773&rtpof=true&sd=true)
+- 🎤 [중간발표 자료](https://drive.google.com/file/d/1COA8hVxKce2ITqUMMZi81D2oJvRxbZyO/view?usp=sharing)
 
 - 🎤 [최종발표 자료](https://drive.google.com/file/d/1Zd7H1pnseM33wLsKeWNzw6r47Dtfco3s/view?usp=sharing)
 
@@ -37,7 +35,7 @@
 - 이후, 전화번호와 닉네임을 설정
 - 결혼식 날짜가 정해졌으면 남은 D-day에 따른 Tip과 알림 요청 기능 제공
 
-## 🕒메인 페이지
+## 메인 페이지
 
 <br>
 <img src="./gif_files/02메인페이지.gif" width="200px">
@@ -55,7 +53,7 @@
 - 박람회에 대한 정보를 얻을 수 있음.
 - 최근 본 상품에 대한 정보를 얻을 수 있음.
 
-## 🏃‍♂️정보 페이지
+## 정보 페이지
 
 <br>
 <img src="./gif_files/06웨딩홀찜담기예약.gif" width="200px">
@@ -75,7 +73,7 @@
 - 적혀진 리뷰에 대해 도움이 돼요 버튼이 존재.
 - 청첩장 만들기를 통해 본인만의 메시지를 담은 모바일 청첩장 페이지가 존재하고 카카오톡 공유하기 버튼을 통해 카카오톡으로 해당 페이지에 대한 공유 가능
 
-## 💭스케쥴 페이지
+## 스케쥴 페이지
 
 <br>
 <img src="gif_files/10개인일정등록후알림.gif" width="200px">
@@ -87,7 +85,7 @@
 - 스케쥴을 등록하면 약혼자에게도 알림을 전달하여 어떤 일정이 등록되었는지 알려준다.
 - 등록된 일정도 30일 7일 1일 당일에 리마인드 알림을 준다.
 
-## 📑 다이어리 페이지
+## 다이어리 페이지
 
 <br>
 <img src="./gif_files/13다이어리페이지시작.gif" width="200px">
@@ -105,7 +103,7 @@
 - 다이어리 작성에는 기본적인 사진과 제목, 내용이 입력가능합니다.
 - 결혼식 당일이 되면 약혼자의 다이어리에 대한 정보 확인할 수 있습니다.
 
-## 👨🏼‍🤝‍👨🏼마이 페이지
+## 마이 페이지
 
 <br>
 <img src="./gif_files/17커플코드연결.gif" width="200px">
@@ -147,6 +145,7 @@
 # 개발 환경
 
 ## ⚙ Management Tool
+
 - 형상 관리 : Gitlab
 - 이슈 관리 : Jira
 - 커뮤니케이션 : Mattermost, Webex, Notion, Discord
@@ -207,6 +206,7 @@
 - MySql 8.0.34
 
 ## Infra
+
 - AWS S3
 - AWS EC2
 - Nginx 1.18.0
@@ -214,7 +214,6 @@
 - Ubuntu 20.04.6 LTS
 - CertBot(CA Certificates)
 - SSL
-
 
 # 기술 소개
 
@@ -231,7 +230,7 @@
   - `OAUTH2` 인증을 이용해 불필요한 개인정보 입력 최소화
 
 - 상품 실시간 예약 랭킹, 최근 본 상품
-
+  
   - in-memory DB인 `Redis`의 sorted set 자료구조를 이용해 실시간 예약 랭킹과 사용자별 최근 본 상품 정보 제공
 
 # 설계 문서
@@ -248,7 +247,7 @@
 
 ## 📝 API 명세서
 
-![1.PNG](README_assets/62af38ffc5adc07bbf982905e932f89fb1cde2d2.PNG)
+![1.PNG](README_assets/3674abed7430e2ab4655ee9ac516111d316a6b66.PNG)
 
 ![2.PNG](README_assets/bae47ca24fb0bb348a98fb5e5f5f96ae5ee093bb.PNG)
 
